@@ -1,5 +1,5 @@
 :root {
-    --border-style: 1px solid black:
+    --border-style: 1px solid black;
 }
 nav {
     background-color: darkblue;
@@ -22,7 +22,7 @@ h1 {color: darkblue;
 main img {
     width: 150px;
     height: auto;
-    border:var(--border-style);
+    border: var(--border-style);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
