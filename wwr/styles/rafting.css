@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #5B67DE;
-    --secondary-color: #5BA7DE;
+    --primary-color: #141A61;
+    --secondary-color: black;
     --accent1-color: #DE925B;
     --accent2-color: #A7DE5B;
     --heading-font: "times new roman", "garamond", serif;
@@ -13,11 +13,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* header {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-} */
 
 body {
     font-family: var(--body-font);
@@ -63,7 +58,7 @@ h1 {
     opacity: 0.8;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 392px;
     right: 320px;
@@ -72,7 +67,7 @@ article {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: black;
+    color: var(--secondary-color);
     border: var(--border-style);
    
 }
