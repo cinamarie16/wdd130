@@ -24,6 +24,38 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    padding: 1.5rem;
+    padding-left: 3rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: var(--border-style);
+    color: var(--primary-color);
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     background-color: var(--accent2-color);
@@ -36,8 +68,21 @@ nav, p, section, article {
     padding: 8px;
 }
 
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    grid-column: 4/5;
+}
+
 .socialmedia a {
     text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a img {
+    width: 50px;
+    height: auto;
 }
 
 .hero {
@@ -69,11 +114,55 @@ h1 {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     border: var(--border-style);
-   
 }
 
 .hero article img {
     float: right;
     width: 125px;
     border: var(--border-style);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+h2 {
+    grid-column: span 5;
+}
+
+section p {
+    grid-column: span 2;
+}
+section img {
+    grid-column: 3/4;
+    width: 150px;
+    height: auto;
+    padding-top: 1rem;
+}
+section figure {
+    grid-column: span 1;
+    justify-self: center;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer p {
+    grid-column: span 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
