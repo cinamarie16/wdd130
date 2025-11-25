@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #EEF2F6;
+    --secondary-color: #D1DBE6;
+    --accent-color: #B3C4D6; 
+    --font-color: #19242E;
+    --border-style: 1.5px solid var(--font-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: var(--font-color);
+    background: var(--primary-color);
+}
+header{
+    margin: 0 auto;
+    width: 800px;
+}
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: var(--font-color);
+    text-align: center;
+}
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: var(--border-style);
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: var(--border-style);
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
+}
+legend {
+    padding: 0.5rem;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+label, input, select, textarea, button {
+    font-family: inherit;
+    font-size: 100%;
+}
+button{
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: var(--border-style);
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    font-weight: 550;
+}
+label {
+    /* text-align: right; */
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+button:hover {
+    background-color: var(--accent-color);
+}
+footer {
+    text-align: center;
+    margin: 1rem auto;
+    width: 800px;
+    font-size: 0.9rem;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 10rem;
+    text-align: center;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    text-align: right;
+
+}
+.column3 {
+    text-align: center;
+    margin: 0.5rem 0;
+}
