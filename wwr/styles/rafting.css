@@ -60,9 +60,6 @@ li a {
 }
 
 .contact-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr, 4fr;  
     margin-top: 1rem;
     margin-bottom: 1rem; 
 }
@@ -185,9 +182,9 @@ footer p {
     text-align: center;
 }
 
-/* .map{
-
-} */
+.map{
+margin: 2.25rem 5px 5px;
+}
 
 form {
     grid-column: 3/6;
