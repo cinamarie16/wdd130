@@ -20,8 +20,11 @@ body {
 }
 
 header, main, footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+    border: var(--border-style);
+    border-radius: 5px;
+
 }
 
 header {
@@ -56,6 +59,14 @@ li a {
     color: var(--primary-color);
 }
 
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, 4fr;  
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     background-color: var(--accent2-color);
@@ -63,7 +74,7 @@ h1, h2 {
     text-align: center;
 }
 
-nav, p, section, article {
+nav, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -96,8 +107,7 @@ a img {
 }
 
 h1 {
-    position: absolute;
-    top: 50px;
+    grid-column: 1/6;
     width: 100%;
     padding: 16px;
     opacity: 0.8;
@@ -129,6 +139,7 @@ section {
 
 h2 {
     grid-column: span 5;
+    font-size: 1.8rem;
 }
 
 section p {
@@ -140,7 +151,7 @@ section img {
     height: auto;
     padding-top: 1rem;
 }
-section figure {
+figure {
     grid-column: span 1;
     justify-self: center;
 }
@@ -165,4 +176,104 @@ footer p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.company-info {
+    grid-column: 1/6;
+    grid-row: span 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .map{
+
+} */
+
+form {
+    grid-column: 3/6;
+    grid-row: 2/6;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+label, input, textarea, button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+label, input, textarea {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;    
+    color: var(--primary-color);
+    text-align: left;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.25rem;
+    margin: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 20% 5% 75%;
+}
+
+.purpose label, input[type="radio"] {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem 0.3rem;
+}
+
+.message {
+    display: block;
+}
+
+button{
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+    border: var(--border-style);
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }

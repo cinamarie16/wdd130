@@ -27,7 +27,7 @@ h1 {
     text-align: center;
 }
 form {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
     border: var(--border-style);
