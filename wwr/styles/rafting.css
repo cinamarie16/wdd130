@@ -262,6 +262,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    margin-top: 2px;
 }
 
 textarea {
