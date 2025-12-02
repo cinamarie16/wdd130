@@ -161,6 +161,7 @@ h1 {
 .index p {
     padding-bottom: 5px;
     margin: 5px;
+    color: var(--secondary-color);
 }
 .hero a, .three-columns a, .two-columns a {
     text-decoration: none;
